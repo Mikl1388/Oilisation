@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class Mix : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public Water Water { get; private set; }
+    public Oil Oil { get; private set; }
+    public Gas Gas { get; private set; }
+    public uint Amount { get { return Water.Amount + Oil.Amount + Gas.Amount; } }
 }
