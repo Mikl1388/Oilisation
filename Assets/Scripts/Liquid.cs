@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class Liquid : MonoBehaviour
 {
-
+    public uint Amount { get; set; }
 }
