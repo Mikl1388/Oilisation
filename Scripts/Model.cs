@@ -10,6 +10,11 @@ public class Model : MonoBehaviour
     public float Balance;
 
     [SerializeField]
+    private float startOilExchangeRate;
+    [SerializeField]
+    private float startGasExchangeRate;
+
+    [SerializeField]
     private GameObject buildingsList;
     [SerializeField]
     private GameObject cellsList;
@@ -23,7 +28,7 @@ public class Model : MonoBehaviour
     private void Start()
     {
         Seller.onSell += ChangeBalance;
-        Seller.ChangeExchangeRate(10, 5);
+        Seller.ChangeExchangeRate(startOilExchangeRate, startGasExchangeRate);
         buildings = buildingsList.GetComponentsInChildren<Building>();
         cells = cellsList.GetComponentsInChildren<Cell>();
         foreach (Building building in buildings) 

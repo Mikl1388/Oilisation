@@ -16,6 +16,7 @@ public class Liquid
     public static Liquid operator +(Liquid lhs, Liquid rhs)
     {
         LiquidType type;
+
         if (LiquidType.Liquid == lhs.Type && LiquidType.Liquid == rhs.Type)
         {
             type = LiquidType.Liquid;

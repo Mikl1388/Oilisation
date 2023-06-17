@@ -40,7 +40,7 @@ public abstract class Building : MonoBehaviour
         return new Liquid(0, LiquidType.Liquid);
     }
 
-    private void Start()
+    private void Awake()
     {
         Liquid = new Liquid(0, LiquidType.Liquid);
         //gameObject.transform.position = Cell.transform.position;

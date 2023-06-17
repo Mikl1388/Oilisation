@@ -32,7 +32,7 @@ public class Office : Building
         gas = new Liquid(0,LiquidType.Gas);
     }
 
-    private void Start()
+    private void Awake()
     {
         oil = new Liquid(0, LiquidType.Oil);
         gas = new Liquid(0, LiquidType.Gas);
